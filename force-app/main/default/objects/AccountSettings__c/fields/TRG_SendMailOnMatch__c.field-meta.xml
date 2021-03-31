@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TRG_SendMailOnMatch__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checkbox to switch on/off sending mail on name matching.</description>
+    <externalId>false</externalId>
+    <label>TRG_SendMailOnMatch</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>
