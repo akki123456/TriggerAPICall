@@ -3,10 +3,8 @@ Description :             Mailgun Integration Service class
 Test Class :              AccountTriggerTest
 -----------------------------------------------------------------*/
 public class MailGunMailService {
-
-    private static final String API_KEY = AccountSettings__c.getInstance().MailGunApiKey__c; //'7d52129ee955a7baf558c1cd3d55c92e-b6d086a8-7151dcda';
-   // private static final String SENDER_DOMAIN = 'sandbox9a784fc949b64716b5bd85ddb128adf3.mailgun.org';
-    private static final String SENDER_EMAIL = AccountSettings__c.getInstance().MailGunSenderEmail__c; //'mailgun@' + SENDER_DOMAIN;
+    private static final String API_KEY      = AccountSettings__c.getInstance().MailGunApiKey__c;
+    private static final String SENDER_EMAIL = AccountSettings__c.getInstance().MailGunSenderEmail__c;
 
     public static void sendEmail(String toEmail, String subject, String text) {
         String sBody = 'from='     + SENDER_EMAIL +
